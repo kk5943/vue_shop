@@ -164,7 +164,7 @@ export default {
       if (res.meta.status !== 200) {
         return this.$message.error('获取商品列表数据失败')
       }
-      console.log(res)
+      // console.log(res)
       this.total = res.data.total
       this.cateList = res.data.result
     },
@@ -196,7 +196,7 @@ export default {
     },
     // 监听选择分类的改变
     handleSelectChange () {
-      console.log(this.selectedKeys)
+      // console.log(this.selectedKeys)
       if (this.selectedKeys.length > 0) {
         this.addCateForm.cat_pid = this.selectedKeys[this.selectedKeys.length - 1]
         this.addCateForm.cat_level = [this.selectedKeys.length]

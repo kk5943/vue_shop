@@ -333,7 +333,7 @@ export default {
         url: '/users/' + id,
         method: 'delete'
       })
-      console.log(res)
+      // console.log(res)
       if (res.meta.status !== 200) {
         return this.$message.error('删除用户失败')
       }
@@ -349,7 +349,7 @@ export default {
       const { data: res } = await request({
         url: '/roles'
       })
-      console.log(res)
+      // console.log(res)
       if (res.meta.status !== 200) {
         return this.$message.error('删除用户失败')
       }
@@ -366,7 +366,7 @@ export default {
           rid: this.selectedRoleId
         }
       })
-      console.log(res)
+      // console.log(res)
       if (res.meta.status !== 200) {
         return this.$message.error('删除用户失败')
       }

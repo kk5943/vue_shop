@@ -158,7 +158,7 @@ export default {
         url: `/roles/${role.id}/rights/${id}`,
         method: 'delete'
       })
-      console.log(res)
+      // console.log(res)
       if (res.meta.status !== 200) {
         return this.$message.error('删除用户失败')
       }
@@ -182,7 +182,7 @@ export default {
 
       // 调用递归遍历所有选中下的最后子节点
       this.getLastKeys(role, this.defaultCheckedKeys)
-      console.log(this.defaultCheckedKeys)
+      // console.log(this.defaultCheckedKeys)
 
       this.setRightsDialogVisible = true
     },
@@ -205,7 +205,7 @@ export default {
           rids
         }
       })
-      console.log(res)
+      // console.log(res)
       if (res.meta.status !== 200) {
         return this.$message.error('分配权限失败')
       }
