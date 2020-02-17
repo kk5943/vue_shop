@@ -269,8 +269,8 @@ export default {
         method: 'put',
         data: {
           attr_name: row.attr_name,
-          attr_sel: this.activeName,
-          attr_vals: row.inputValue
+          attr_sel: row.attr_sel,
+          attr_vals: row.attr_vals.join(' ')
         }
       })
       if (res.meta.status !== 200) return this.$message.error('添加参数失败')
@@ -363,5 +363,6 @@ export default {
 }
 .el-tag {
   margin-right: 10px;
+
 }
 </style>
